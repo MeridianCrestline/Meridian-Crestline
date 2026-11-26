@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Meridian Crestline Exports - Clean, Ultra-Premium Modern Styles
+   Inspired by FreshFarm, Brilliance International & SV World Foods
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap');
+
+:root {
+  --color-primary: #0A140F;
+  --color-brand-green: #15803D;
+  --color-brand-light: #22C55E;
+  --color-brand-gold: #C4841D;
+  --color-bg-light: #FAFAF7;
+  --color-card-bg: #FFFFFF;
+  --color-border: #E8ECE9;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Floating Pill Navbar (Brilliance International reference) */
+.nav-pill {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 0 1px 1px rgba(0, 0, 0, 0.03);
+}
+
+/* FreshFarm Geometric Leaf/Shield Curved Image Mask */
+.hero-leaf-mask {
+  border-radius: 40px 180px 40px 180px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(10, 20, 15, 0.25);
+}
+
+@media (max-width: 768px) {
+  .hero-leaf-mask {
+    border-radius: 30px 100px 30px 100px;
+  }
+}
+
+/* Floating feature strip card shadow */
+.floating-feature-strip {
+  background: #FFFFFF;
+  border: 1px solid #EBECE8;
+  box-shadow: 0 20px 40px -15px rgba(10, 20, 15, 0.07);
+}
+
+/* Minimal Luxury Product Cards */
+.luxury-product-card {
+  background: #FFFFFF;
+  border: 1px solid #EAECE8;
+  border-radius: 24px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(21, 128, 61, 0.3);
+  box-shadow: 0 24px 48px -12px rgba(10, 20, 15, 0.09);
+}
+
+/* Quote Dark Form Card (Image 4 reference with high polish) */
+.dark-quote-container {
+  background: radial-gradient(circle at 80% 20%, #15221b 0%, #0c120e 70%, #060907 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.7);
+}
+
+.dark-input-field {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+}
+
+.dark-input-field:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #22C55E;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.dark-input-field::placeholder {
+  color: #6B7280;
+}
+
+/* Modern Pill Button */
+.btn-pill-primary {
+  background-color: #0A140F;
+  color: #FFFFFF;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-primary:hover {
+  background-color: #15803D;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -5px rgba(21, 128, 61, 0.3);
+}
+
+.btn-pill-accent {
+  background: linear-gradient(135deg, #15803D 0%, #16A34A 100%);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-accent:hover {
+  background: linear-gradient(135deg, #16A34A 0%, #22C55E 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -5px rgba(34, 197, 94, 0.4);
+}
+
+/* Soft highlight text */
+.text-gradient-green {
+  background: linear-gradient(135deg, #15803D 0%, #16A34A 50%, #22C55E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
